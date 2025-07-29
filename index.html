@@ -3,27 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Researcher Profile</title>
+    <title>Zhou Yuguang</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
+            padding: 30px;
+            line-height: 1.7;
+            background: linear-gradient(120deg, #f0f4f9 0%, #e0e7ef 100%);
+            color: #222;
+        }
+        h1, h2 {
+            color: #2a4d69;
         }
         h1 {
-            color: #333;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #b0c4de;
             padding-bottom: 10px;
+            margin-bottom: 20px;
         }
         .section {
-            margin: 20px 0;
+            margin: 28px 0;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(42,77,105,0.07);
+            padding: 24px 24px 18px 24px;
         }
         .contact-info {
-            background: #f5f5f5;
-            padding: 15px;
-            border-radius: 5px;
+            background: #eaf6fb;
+            padding: 18px;
+            border-radius: 8px;
+            color: #205072;
+            box-shadow: 0 1px 4px rgba(32,80,114,0.08);
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 7px;
+        }
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+        }
+        .about-text {
+            flex: 2;
+        }
+        .bio-photo {
+            flex: 1;
+            max-width: 300px;
+            min-width: 180px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(42,77,105,0.13);
+            margin-top: 4px;
+        }
+        .publications-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .publications-list li {
+            margin-bottom: 10px;
+            background: #f5faff;
+            border-left: 4px solid #2a4d69;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        a {
+            color: #1b6ca8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #e17055;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -32,35 +85,55 @@
     
     <div class="section">
         <h2>About Me</h2>
-        <p>I am a Ph.D student in HKUST, advised by Prof. Shuai Wang. Before this, I obtained my bachelor's degree at Beihang University and conducted research on AI adversarial attacks under the supervision of Prof. Aishan Liu. I earned my master's degree at National University of Singapore, where I studied data protection and privacy security issues of large language models under Prof. Jiaheng Zhang. I also interned at ByteDance Singapore. My research mainly focuses on LLM and agents safety and privacy.</p>
-    </div>
-
-    <div class="section">
-        <h2>Current Position</h2>
-        <p>Ph.D Student<br>
-        Department of Computer Science and Engineering<br>
-        Hong Kong University of Science and Technology</p>
-    </div>
-
-    <div class="section">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>LLM-based agent safety</li>
-            <li>AI training data privacy</li>
-            <li>Large model interpretability</li>
-        </ul>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am a Ph.D student in HKUST, advised by <a href="https://home.cse.ust.hk/~shuaiw/" target="_blank">Prof. Shuai Wang</a>. Before this, I obtained my bachelor's degree at Beihang University and conducted research on AI adversarial attacks under the supervision of <a href="https://liuaishan.github.io/" target="_blank">Prof. Aishan Liu</a>. I earned my master's degree at National University of Singapore, where I studied data protection and privacy issues of large language models with <a href="https://zjhzjh123.github.io/" target="_blank">Prof. Jiaheng Zhang</a>. I also interned at ByteDance Singapore. My research interest mainly lies in LLM-based agent safety, foundation model data privacy and large model interpretability.</p>
+            </div>
+            <img src="assets/bio.jpg" alt="Profile Photo" class="bio-photo">
+        </div>
     </div>
 
     <div class="section">
         <h2>Education</h2>
-        <p>M.Sc. in Data Science and Machine Learning, NUS<br>
-        B.S. in Artificial Intelligence, Beihang University</p>
+        <ul>
+        <li>Ph.D. in Computer Science and Engineering, HKUST (ongoing)</li> 
+        <li>M.Sc. in Data Science and Machine Learning, NUS</li>
+        <li>B.S. in Artificial Intelligence, Beihang University</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Publications</h2>
+        <ul class="publications-list">
+            <li>
+                <a href="https://arxiv.org/pdf/2503.09022" target="_blank"><b>Prompt inversion attack against collaborative inference of large language models</b></a><br>
+                <span style="font-size: 0.98em;">
+                    Wenjie Qu, <b>Yuguang Zhou</b>, Yongji Wu, Tingsong Xiao, Binhang Yuan, Yiming Li, Jiaheng Zhang<br>
+                    <i>IEEE Symposium on Security and Privacy 2025</i>
+                </span>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2408.02882" target="_blank"><b>Compromising Embodied Agents with Contextual Backdoor Attacks</b></a><br>
+                <span style="font-size: 0.98em;">
+                    Aishan Liu*, <b>Yuguang Zhou*</b>, Xianglong Liu, Tianyuan Zhang, Siyuan Liang, Jiakai Wang, Yanjun Pu, Tianlin Li, Junqi Zhang, Wenbo Zhou, Qing Guo and Dacheng Tao<br>
+                    <i>IEEE Transactions on Information Forensics and Security</i>
+                </span>
+            </li>
+            <li>
+                <a href="https://arxiv.org/pdf/2312.15172" target="_blank"><b>Pre-trained trojan attacks for visual recognition</b></a><br>
+                <span style="font-size: 0.98em;">
+                    Aishan Liu, Xianglong Liu, Xinwei Zhang, Yisong Xiao, <b>Yuguang Zhou</b>, Siyuan Liang, Jiakai Wang, Xiaochun Cao, Dacheng Tao<br>
+                    <i>International Journal of Computer Vision</i>
+                </span>
+            </li>
+        </ul>
     </div>
 
     <div class="section contact-info">
         <h2>Contact</h2>
-        <p>Email: yuguang.zhou@connect.ust.hk<br>
-        also: ygzhou02@gmail.com</p>
+        <p><a href="mailto:yuguang.zhou@connect.ust.hk" target="_blank">Work Email</a> /
+        <a href="mailto:ygzhou02@gmail.com" target="_blank">Daily Email</a> / 
+        <a href="https://scholar.google.com/citations?user=ujoLtH8AAAAJ&hl=zh-CN" target="_blank">Google Scholar</a></p>
     </div>
 </body>
 </html>
